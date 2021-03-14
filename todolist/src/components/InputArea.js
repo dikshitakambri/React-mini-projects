@@ -5,7 +5,7 @@ function Input(props){
     const [textItem, settextItem] = useState("");
 
     function Handlechange(event) {
-        const newItem = event.target.value;
+        const {name, value} = event.target;
     
         settextItem(newItem);
       }
